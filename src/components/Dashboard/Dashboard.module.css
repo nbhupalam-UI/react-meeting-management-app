@@ -1,0 +1,113 @@
+.Container {
+  --grey-100: #e4e9f0;
+  --grey-200: #cfd7e3;
+  --grey-300: #b5c0cd;
+  --grey-800: #3e4e63;
+  --grid-gap: 2px;
+
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.Dashboard {
+  position: relative;
+  background-color: var(--grey-200);
+  border: solid 2px var(--grey-200);
+}
+
+.CalendarHeader {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.CurrentMonth {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.WeekDay {
+  color: var(--grey-800);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.WeekDay li {
+  background-color: white;
+}
+
+.WeekDay,
+.DaysGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: var(--grid-gap);
+  grid-row-gap: var(--grid-gap);
+  margin: 0;
+  padding: 0;
+  border-top: solid 2px var(--grey-200);
+}
+
+.WeekDay > * {
+  text-align: center;
+  padding: 10px;
+}
+
+.DaysGrid {
+  height: 100%;
+  position: relative;
+}
+
+.CalendarDay {
+  position: relative;
+  min-height: 60px;
+  font-size: 16px;
+  background-color: #fff;
+  color: var(--grey-800);
+  cursor: pointer;
+}
+
+.CalendarDay:nth-child(7n),
+.CalendarDay:nth-child(7n + 1) {
+  background-color: #f0ecec;
+}
+
+.CalendarDay:hover,
+.CalendarDay:nth-child(7n):hover,
+.CalendarDay:nth-child(7n + 1):hover {
+  background-color: #ccc;
+}
+
+.CalendarDay p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+.hasMeeting {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #7676b0;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.MeetingDetails li {
+  margin: 10px 0;
+}
+
+.TextCenter {
+  text-align: center;
+}
+
+.Title {
+  background-color: white;
+}
+
+.Detail {
+  font-weight: 600;
+}

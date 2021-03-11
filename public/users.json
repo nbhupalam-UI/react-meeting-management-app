@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "nbhupalam@gmail.com",
+      "password": "test123",
+      "token": "nbpuser"
+    },
+    {
+      "email": "test@test.com",
+      "password": "testuser",
+      "token": "nbptestuser"
+    }
+  ]
+}
